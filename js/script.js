@@ -44,22 +44,29 @@ function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!'); 
-    playerWinAmount = playerWinAmount + 1;
+    incrasePlayerWinAmount();
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
     printMessage('Wygrywasz!');
-    playerWinAmount = playerWinAmount + 1;
+    incrasePlayerWinAmount();
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
     printMessage('Wygrywasz!');
-    playerWinAmount = playerWinAmount + 1;
+    incrasePlayerWinAmount();
   } else if (argPlayerMove == argComputerMove) {
     printMessage('Remis!');
   } else {
     printMessage('Przegrywasz :(');
-    computerWinAmount = computerWinAmount + 1;
+    incraseComputerWinAmount();
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
+function incrasePlayerWinAmount() {
+  playerWinAmount = playerWinAmount + 1;
+}
+
+function incraseComputerWinAmount() {
+  computerWinAmount = computerWinAmount + 1;
+}
 
 
 
