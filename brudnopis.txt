@@ -110,3 +110,41 @@ console.log('wylosowana liczba to: ' + randomNumber);
 computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Zdefiniowanie zmiennej bez przypisanej wartości
+
+let players;
+
+// Zdefiniowanie zmiennej z przypisaną wartości
+
+let amount = 20.5;
+
+// Zdefiniowanie stałej z przypisaną wartości
+
+const homeUrl = 'https://google.com';
+
+// Definiowanie wielu stałych (w ten sam sposób możemy użyć let)
+
+const button,
+  activeClass = 'active',
+  description;
+
+  // Deklaracja funkcji z użyciem argumentu
+
+function quoteText(quoted){
+  return '<quote>' + quoted + '</quote>';
+}
